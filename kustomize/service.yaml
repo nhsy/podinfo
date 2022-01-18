@@ -8,10 +8,10 @@ spec:
     app: podinfo
   ports:
     - name: http
-      port: 9898
+      port: http
       protocol: TCP
-      targetPort: http
-    - port: 9999
-      targetPort: grpc
+      targetPort: 9898
+    - name: grpc
+    - port: grpc
       protocol: TCP
-      name: grpc
+      targetPort: 9999
